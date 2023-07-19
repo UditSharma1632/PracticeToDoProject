@@ -1,9 +1,9 @@
-package com.practice.service;
+package com.practice.toDo.service;
 
-import com.practice.dto.ToDoDto;
-import com.practice.exception.ResourceNotFound;
-import com.practice.model.ToDo;
-import com.practice.repository.ToDoRepository;
+import com.practice.toDo.dto.ToDoDto;
+import com.practice.toDo.exception.ResourceNotFound;
+import com.practice.toDo.model.ToDo;
+import com.practice.toDo.repository.ToDoRepository;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;

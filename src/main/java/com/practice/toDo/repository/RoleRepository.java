@@ -1,6 +1,6 @@
-package com.practice.repository;
+package com.practice.toDo.repository;
 
-import com.practice.model.Role;
+import com.practice.toDo.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

@@ -1,4 +1,4 @@
-package com.practice.config;
+package com.practice.toDo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,19 +31,19 @@ public class SpringSecurityConfig {
         httpSecurity.csrf().disable()
                 .authorizeHttpRequests((authorize) -> {
 
-                    // authorize based on ADMIN role
-//                    authorize.requestMatchers(HttpMethod.POST, "/MyToDos/**").hasRole("ADMIN");
-//                    authorize.requestMatchers(HttpMethod.PUT, "/MyToDos/**").hasRole("ADMIN");
-//                    authorize.requestMatchers(HttpMethod.DELETE, "/MyToDos/**").hasRole("ADMIN");
+                     //authorize based on ADMIN role
+                    authorize.requestMatchers(HttpMethod.POST, "/MyToDos/**").hasRole("ADMIN");
+                    authorize.requestMatchers(HttpMethod.PUT, "/MyToDos/**").hasRole("ADMIN");
+                    authorize.requestMatchers(HttpMethod.DELETE, "/MyToDos/**").hasRole("ADMIN");
 
                     // authorize based on ADMIN and USER
-//                    authorize.requestMatchers(HttpMethod.GET, "/MyToDos/*")
-//                            .hasAnyRole("ADMIN", "USER");
-//                    authorize.requestMatchers(HttpMethod.PATCH, "/MyToDos/*")
-//                            .hasAnyRole("ADMIN", "USER");
+                    authorize.requestMatchers(HttpMethod.GET, "/MyToDos/*")
+                            .hasAnyRole("ADMIN", "USER");
+                    authorize.requestMatchers(HttpMethod.PATCH, "/MyToDos/*")
+                            .hasAnyRole("ADMIN", "USER");
 
                     // public access to GET api's
-//                    authorize.requestMatchers(HttpMethod.GET, "/MyToDos/**").permitAll();
+                    authorize.requestMatchers(HttpMethod.GET, "/MyToDos/**").permitAll();
 
                     authorize.anyRequest().authenticated();
                 }).httpBasic(Customizer.withDefaults());

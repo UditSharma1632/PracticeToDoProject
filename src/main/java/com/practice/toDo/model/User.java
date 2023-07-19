@@ -1,4 +1,4 @@
-package com.practice.model;
+package com.practice.toDo.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

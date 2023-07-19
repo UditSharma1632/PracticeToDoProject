@@ -1,6 +1,6 @@
-package com.practice.repository;
+package com.practice.toDo.repository;
 
-import com.practice.model.ToDo;
+import com.practice.toDo.model.ToDo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ToDoRepository extends JpaRepository<ToDo, Long> {

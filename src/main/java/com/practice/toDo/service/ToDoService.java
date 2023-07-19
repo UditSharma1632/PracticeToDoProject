@@ -1,7 +1,6 @@
-package com.practice.service;
+package com.practice.toDo.service;
 
-import com.practice.dto.ToDoDto;
-import org.springframework.stereotype.Service;
+import com.practice.toDo.dto.ToDoDto;
 
 import java.util.List;
 

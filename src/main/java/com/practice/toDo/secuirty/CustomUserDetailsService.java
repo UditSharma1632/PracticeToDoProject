@@ -1,7 +1,8 @@
-package com.practice.secuirty;
+/*
+package com.practice.toDo.secuirty;
 
-import com.practice.model.User;
-import com.practice.repository.UserRepository;
+import com.practice.toDo.model.User;
+import com.practice.toDo.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -32,3 +33,4 @@ public class CustomUserDetailsService implements UserDetailsService {
         );
     }
 }
+*/

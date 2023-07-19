@@ -1,7 +1,7 @@
-package com.practice.controller;
+package com.practice.toDo.controller;
 
-import com.practice.dto.ToDoDto;
-import com.practice.service.ToDoService;
+import com.practice.toDo.dto.ToDoDto;
+import com.practice.toDo.service.ToDoService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
